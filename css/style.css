@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4; /* Fondo más suave */
+    line-height: 1.6; /* Mejor legibilidad */
+    color: #333; /* Texto más oscuro para mejor contraste */
+}
+
+h1, h2 {
+    color: #4A4A4A; /* Títulos más amigables con un gris oscuro */
+    margin-bottom: 15px;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #007bff; /* Fondo del menú de navegación */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+nav ul li {
+    display: inline-block; /* Alinear los elementos del menú en fila */
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Texto blanco en el menú */
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+nav ul li a:hover {
+    background-color: #0056b3; /* Cambio de fondo al hacer hover */
+    border-radius: 5px; /* Suavizar esquinas en hover */
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+    background-color: #fff; /* Fondo del formulario */
+    padding: 20px;
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el formulario */
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin: 20px auto; /* Centrar el formulario */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form textarea {
+    width: 100%; /* Inputs y textarea al 100% del ancho */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Para asegurar que el padding se incluye en el ancho */
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form input[type="number"]:focus,
+form textarea:focus {
+    border-color: #007bff; /* Borde azul al hacer foco */
+    outline: none; /* Eliminar outline predeterminado */
+}
+
+form button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Texto en blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Suave transición de color */
+}
+
+form button:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro en hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Elementos del menú en columna en pantallas pequeñas */
+        margin-bottom: 10px;
+    }
+
+    form {
+        max-width: 100%; /* Asegurarse de que el formulario ocupe todo el ancho en pantallas pequeñas */
+    }
+}
+
+/* Estilos para agrupar botones */
+.button-group {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    justify-content: flex-start; /* Alinear los botones al inicio */
+}
+
+.button-group button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro al hacer hover */
+}
+
